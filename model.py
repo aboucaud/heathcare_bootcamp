@@ -14,6 +14,6 @@ def model(X_train, y_train, X_test):
 def pipelin():
     our_pipe = Pipeline([('imputer', Imputer(strategy='most_frequent')),
                          ('rf', AdaBoostClassifier(
-                            base_estimator=RandomForestClassifier(max_depth=3, n_estimators=100),
+                            base_estimator=RandomForestClassifier(max_depth=6,bootstrap= False,criterion= 'entropy' ,n_estimators=50),
                             n_estimators=20))])
     return our_pipe
