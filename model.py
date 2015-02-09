@@ -48,14 +48,14 @@ class CustomClassifier(BaseEstimator, ClassifierMixin):
         return mix_array
 
 myc_params = {
-    "x_rf": 0.3,
-    "x_gb": 0.3,
-    "max_depth_rf": 6,
-    "max_depth_gb": 2,
-    "n_estim_rf": 20,
-    "n_estim_gb": 100,
+    "x_rf": 0.5,
+    "x_gb": 0.4,
+    "max_depth_rf": 50,
+    "max_depth_gb": 40,
+    "n_estim_rf": 300,
+    "n_estim_gb": 200,
     "n_jobs": -1,
-    "C": 1.}
+    "C": 10.}
 
 def custom_pipeline(params):
     return Pipeline([
