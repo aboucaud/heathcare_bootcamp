@@ -5,7 +5,7 @@ from sklearn.pipeline import Pipeline
 params_rf = {
     'n_estimators': 50,
     'max_depth': 6,
-    'bootstrap': False
+    'bootstrap': False,
     'criterion': 'entropy'
 }
 
