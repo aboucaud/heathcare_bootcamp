@@ -1,4 +1,4 @@
-from sklearn.ensemble import AdaRandomForestClassifier
+from sklearn.ensemble import AdaBoostClassifier, RandomForestClassifier
 from sklearn.preprocessing import Imputer
 
 from sklearn.pipeline import Pipeline
